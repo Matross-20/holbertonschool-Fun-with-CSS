@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+li {
+    font-size: 18px;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* General styles for icons */
+.icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px; /* Match icon width in the sprite */
+    height: 20px; /* Match icon height in the sprite */
+    background: url("0-sprite.png") no-repeat;
+}
+
+/* Icon specific styles */
+.i-html {
+    background-position: 0 0; /* Adjust based on sprite for HTML */
+}
+
+.i-css {
+    background-position: -20px 0; /* Adjust based on sprite for CSS */
+}
+
+.i-js {
+    background-position: -40px 0; /* Adjust based on sprite for JS */
+}
