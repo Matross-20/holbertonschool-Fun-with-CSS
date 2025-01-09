@@ -1,43 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
-    padding: 20px;
+    padding: 0;
+    margin-top: 20px;
+    
 }
 
 li {
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 700;
     margin: 10px 0;
-    position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    background-color: rgb(247, 249, 250);
+    border-radius: 20px;
+    padding: 20px;
 }
 
-/* General styles for icons */
 .icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    width: 20px; /* Match icon width in the sprite */
-    height: 20px; /* Match icon height in the sprite */
-    background: url("0-sprite.png") no-repeat;
+    display: flex;
+    flex-direction: row;
+    width: 280px; 
+    height: 400px; 
+    background-image: url('./images/0-sprite.png'); 
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    gap: 30px;
 }
 
-/* Icon specific styles */
-.i-html {
-    background-position: 0 0; /* Adjust based on sprite for HTML */
+.icon.i-html {
+    background-position: 0 0; 
 }
 
-.i-css {
-    background-position: -20px 0; /* Adjust based on sprite for CSS */
+.icon.i-css {
+    background-position: -290px 0px; 
 }
 
-.i-js {
-    background-position: -40px 0; /* Adjust based on sprite for JS */
+.icon.i-js {
+    background-position: -580px 0px;
 }
